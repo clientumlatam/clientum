@@ -1,0 +1,19 @@
+[Unit]
+Description=Evolution API (WhatsApp :3000)
+After=network.target postgresql.service
+Requires=postgresql.service
+
+[Service]
+Type=simple
+User=TU_USUARIO
+WorkingDirectory=/home/TU_USUARIO/evolution
+EnvironmentFile=/home/TU_USUARIO/evolution/.env
+ExecStart=/usr/bin/node dist/main.js
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=evolution-api
+
+[Install]
+WantedBy=multi-user.target

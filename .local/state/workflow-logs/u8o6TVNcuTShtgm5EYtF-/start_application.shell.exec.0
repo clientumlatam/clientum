@@ -1,0 +1,261 @@
+=== Verificando lockfile ===
+=== Installing dependencies ===
+Scope: all 10 workspace projects
+Lockfile is up to date, resolution step is skipped
+Already up to date
+
+Done in 2.9s using pnpm v10.26.1
+=== Aplicando schema de DB ===
+  Modo desarrollo — sincronizando schema (push sin --force)...
+
+> @workspace/db@0.0.0 push /home/runner/workspace/packages/db
+> drizzle-kit push --config ./drizzle.config.ts
+
+[90mReading config file '/home/runner/workspace/packages/db/drizzle.config.ts'[39m
+[90mUsing 'pg' driver for database querying[39m
+[⣷] Pulling schema from database...
+[2K[1A[2K[G[⣯] Pulling schema from database...
+[2K[1A[2K[G[⣟] Pulling schema from database...
+[2K[1A[2K[G[⡿] Pulling schema from database...
+[2K[1A[2K[G[⢿] Pulling schema from database...
+[2K[1A[2K[G[[32m✓[39m] Pulling schema from database...
+[[34mi[39m] No changes detected
+=== Building API server ===
+
+> @workspace/api-server@0.0.0 build /home/runner/workspace/apps/api
+> node ./build.mjs
+
+
+  [37mdist/[0m[1mindex.mjs[0m                       [33m4.2mb ⚠️[0m
+  [37mdist/[0m[1mpino-worker.mjs[0m               [36m153.4kb[0m
+  [37mdist/[0m[1mpino-file.mjs[0m                 [36m142.0kb[0m
+  [37mdist/[0m[1mpino-pretty.mjs[0m               [36m114.6kb[0m
+  [37mdist/[0m[1mthread-stream-worker.mjs[0m        [36m7.3kb[0m
+  [37mdist/[0m[1mindex.mjs.map[0m                   [36m7.4mb[0m
+  [37mdist/[0m[1mpino-worker.mjs.map[0m           [36m256.9kb[0m
+  [37mdist/[0m[1mpino-file.mjs.map[0m             [36m229.0kb[0m
+  [37mdist/[0m[1mpino-pretty.mjs.map[0m           [36m204.0kb[0m
+  [37mdist/[0m[1mthread-stream-worker.mjs.map[0m   [36m12.0kb[0m
+
+⚡ [32mDone in 587ms[0m
+=== Starting API server (background, :8080) ===
+=== Starting Vite dev server (background, :21496) ===
+=== Waiting for API (:8080) and Vite (:21496) to be ready ===
+
+> @workspace/clientum@0.0.0 dev /home/runner/workspace/apps/web
+> vite --config vite.config.ts --host 0.0.0.0
+
+[04:43:19.126] [33mWARN[39m (6190): [36mMP_WEBHOOK_SECRET is not set. MercadoPago webhook signature verification is DISABLED. Set this secret before going to production.[39m
+[04:43:19.131] [32mINFO[39m (6190): [36mServer listening[39m
+    [35mport[39m: 8080
+[04:43:19.134] [32mINFO[39m (6190): [36mTrial alert scheduler started[39m
+[04:43:19.134] [32mINFO[39m (6190): [36mReminder scheduler started (interval: 60s)[39m
+[04:43:19.134] [32mINFO[39m (6190): [36mAFIP token scheduler iniciado[39m
+    [35mintervalHoras[39m: 2
+    [35mumbralHoras[39m: 3
+[04:43:19.135] [32mINFO[39m (6190): [36mHealth alert scheduler iniciado[39m
+    [35menabled[39m: false
+    [35mintervalMs[39m: 180000
+[04:43:19.135] [32mINFO[39m (6190): [36mWeekly report scheduler started[39m
+    [35mintervalHoras[39m: 1
+[04:43:19.663] [32mINFO[39m (6190): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 1,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J
+  [32m[1mVITE[22m v7.3.3[39m  [2mready in [0m[1m1453[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m21496[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.24.0.2:[1m21496[22m/[39m
+  Both services ready.
+=== Starting proxy (:5000) ===
+[04:43:20.689] [32mINFO[39m (6190): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 2,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 2
+Proxy running on :5000 → API :8080  Vite :21496
+[04:43:23.053] [32mINFO[39m (6190): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 3,
+      "method": "GET",
+      "url": "/api/widget/clientumadminwidgettoken00000001/widget.js"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 21
+[04:43:23.475] [32mINFO[39m (6190): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 4,
+      "method": "GET",
+      "url": "/api/widget/clientumadminwidgettoken00000001/widget.js"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 11
+[04:43:24.603] [32mINFO[39m (6190): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 5,
+      "method": "GET",
+      "url": "/api/auth/user"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 5
+[04:43:25.071] [32mINFO[39m (6190): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 6,
+      "method": "GET",
+      "url": "/api/auth/user"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 4
+[04:43:31.383] [32mINFO[39m (6190): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 7,
+      "method": "GET",
+      "url": "/api/auth/user"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[04:43:53.358] [32mINFO[39m (6190): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 12,
+      "method": "GET",
+      "url": "/api/auth/user"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 29
+[04:43:53.376] [32mINFO[39m (6190): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 9,
+      "method": "GET",
+      "url": "/api/chatbot/conversations"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 55
+[04:43:53.379] [32mINFO[39m (6190): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 11,
+      "method": "GET",
+      "url": "/api/catalog/config"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 52
+[04:43:53.426] [32mINFO[39m (6190): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 8,
+      "method": "GET",
+      "url": "/api/chatbot/status"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 110
+[04:43:53.449] [32mINFO[39m (6190): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 10,
+      "method": "GET",
+      "url": "/api/analytics"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 125
+[04:43:53.572] [32mINFO[39m (6190): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 13,
+      "method": "GET",
+      "url": "/api/orders/stats"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 5
+[04:43:53.588] [32mINFO[39m (6190): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 14,
+      "method": "GET",
+      "url": "/api/appointments/stats"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 5
+[04:43:53.590] [32mINFO[39m (6190): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 15,
+      "method": "GET",
+      "url": "/api/afip/status"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 6
+[04:43:53.631] [32mINFO[39m (6190): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 16,
+      "method": "GET",
+      "url": "/api/chatbot/conversations"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[04:43:53.650] [32mINFO[39m (6190): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 17,
+      "method": "GET",
+      "url": "/api/chatbot/status"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 7

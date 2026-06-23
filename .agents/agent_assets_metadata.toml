@@ -1,0 +1,44 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "X61VPt6j2YqGY_cmzaxSn"
+uri = "file://ARCHITECTURE.md"
+type = "text"
+title = "ARCHITECTURE.md — con diagramas Mermaid"
+
+[[outputs]]
+id = "SHMVAu1vx4v7SMrJC4NFZ"
+uri = "file://ONBOARDING.md"
+type = "text"
+title = "ONBOARDING.md — Guía para nuevos devs"
+
+[[outputs]]
+id = "qn9dlM8MCZNi28fd2d8jK"
+uri = "file://CHANGELOG.md"
+type = "text"
+title = "CHANGELOG.md — Clientum"
+
+[[outputs]]
+id = "A4OWy8YzirzGOboA1c81j"
+uri = "file://ROADMAP.md"
+type = "text"
+title = "ROADMAP.md — Clientum"
+
+[[outputs]]
+id = "IXpvVlEYNGgl0Xl_spwWQ"
+uri = "file://PROYECTO_ANALISIS.md"
+type = "text"
+title = "Clientum — Análisis Completo + Diagramas"
+
+[[outputs]]
+id = "4ogUFEvxgvVM_y4JJxzbg"
+uri = "file://API_KEYS.md"
+type = "text"
+title = "Clientum — API Keys & Variables de Entorno"
+
+[[outputs]]
+id = "fNLVKdkFkvj4RKedrLVNz"
+uri = "file://docs/INDICE-ARCHIVOS.md"
+type = "text"
+title = "Índice completo — deployment / docs / scripts"

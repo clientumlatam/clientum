@@ -1,0 +1,48 @@
+=== Verificando lockfile ===
+=== Installing dependencies ===
+Scope: all 10 workspace projects
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +977
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 977, reused 125, downloaded 0, added 0
+Progress: resolved 977, reused 348, downloaded 0, added 0
+Progress: resolved 977, reused 568, downloaded 0, added 0
+Progress: resolved 977, reused 602, downloaded 0, added 0
+Progress: resolved 977, reused 792, downloaded 0, added 0
+Progress: resolved 977, reused 977, downloaded 0, added 1
+Progress: resolved 977, reused 977, downloaded 0, added 67
+Progress: resolved 977, reused 977, downloaded 0, added 124
+Progress: resolved 977, reused 977, downloaded 0, added 154
+Progress: resolved 977, reused 977, downloaded 0, added 199
+Progress: resolved 977, reused 977, downloaded 0, added 263
+Progress: resolved 977, reused 977, downloaded 0, added 313
+Progress: resolved 977, reused 977, downloaded 0, added 335
+Progress: resolved 977, reused 977, downloaded 0, added 381
+Progress: resolved 977, reused 977, downloaded 0, added 407
+Progress: resolved 977, reused 977, downloaded 0, added 424
+Progress: resolved 977, reused 977, downloaded 0, added 425
+Progress: resolved 977, reused 977, downloaded 0, added 429
+Progress: resolved 977, reused 977, downloaded 0, added 441
+Progress: resolved 977, reused 977, downloaded 0, added 465
+Progress: resolved 977, reused 977, downloaded 0, added 495
+Progress: resolved 977, reused 977, downloaded 0, added 535
+Progress: resolved 977, reused 977, downloaded 0, added 558
+Progress: resolved 977, reused 977, downloaded 0, added 580
+Progress: resolved 977, reused 977, downloaded 0, added 586
+Progress: resolved 977, reused 977, downloaded 0, added 590
+Progress: resolved 977, reused 977, downloaded 0, added 592
+Progress: resolved 977, reused 977, downloaded 0, added 593
+Progress: resolved 977, reused 977, downloaded 0, added 595
+Progress: resolved 977, reused 977, downloaded 0, added 596
+Progress: resolved 977, reused 977, downloaded 0, added 598
+Progress: resolved 977, reused 977, downloaded 0, added 599
+Progress: resolved 977, reused 977, downloaded 0, added 611
+Progress: resolved 977, reused 977, downloaded 0, added 649
+Progress: resolved 977, reused 977, downloaded 0, added 691
+Progress: resolved 977, reused 977, downloaded 0, added 734
+Progress: resolved 977, reused 977, downloaded 0, added 785
+Progress: resolved 977, reused 977, downloaded 0, added 844
+Progress: resolved 977, reused 977, downloaded 0, added 895
+Progress: resolved 977, reused 977, downloaded 0, added 915
+ ERR_PNPM_ENOTEMPTY  ENOTEMPTY: directory not empty, rename '/home/runner/workspace/node_modules/.pnpm/pngjs@5.0.0/node_modules/pngjs_tmp_672' -> '/home/runner/workspace/node_modules/.pnpm/pngjs@5.0.0/node_modules/pngjs'

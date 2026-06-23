@@ -1,0 +1,198 @@
+=== Verificando lockfile ===
+=== Installing dependencies ===
+Scope: all 10 workspace projects
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +977
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 977, reused 189, downloaded 0, added 0
+Progress: resolved 977, reused 390, downloaded 0, added 0
+Progress: resolved 977, reused 556, downloaded 0, added 0
+Progress: resolved 977, reused 606, downloaded 0, added 0
+Progress: resolved 977, reused 864, downloaded 0, added 0
+Progress: resolved 977, reused 977, downloaded 0, added 100
+Progress: resolved 977, reused 977, downloaded 0, added 318
+Progress: resolved 977, reused 977, downloaded 0, added 376
+Progress: resolved 977, reused 977, downloaded 0, added 427
+Progress: resolved 977, reused 977, downloaded 0, added 434
+Progress: resolved 977, reused 977, downloaded 0, added 448
+Progress: resolved 977, reused 977, downloaded 0, added 484
+Progress: resolved 977, reused 977, downloaded 0, added 529
+Progress: resolved 977, reused 977, downloaded 0, added 558
+Progress: resolved 977, reused 977, downloaded 0, added 584
+Progress: resolved 977, reused 977, downloaded 0, added 595
+Progress: resolved 977, reused 977, downloaded 0, added 603
+Progress: resolved 977, reused 977, downloaded 0, added 604
+Progress: resolved 977, reused 977, downloaded 0, added 605
+Progress: resolved 977, reused 977, downloaded 0, added 613
+Progress: resolved 977, reused 977, downloaded 0, added 627
+Progress: resolved 977, reused 977, downloaded 0, added 688
+Progress: resolved 977, reused 977, downloaded 0, added 755
+Progress: resolved 977, reused 977, downloaded 0, added 814
+Progress: resolved 977, reused 977, downloaded 0, added 860
+Progress: resolved 977, reused 977, downloaded 0, added 910
+Progress: resolved 977, reused 977, downloaded 0, added 921
+Progress: resolved 977, reused 977, downloaded 0, added 935
+Progress: resolved 977, reused 977, downloaded 0, added 977, done
+
+dependencies:
++ http-proxy 1.18.1
+
+devDependencies:
++ @types/http-proxy 1.17.17
++ prettier 3.8.3
++ typescript 5.9.3
+
+╭ Warning ─────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│   Ignored build scripts: core-js@3.49.0.                                     │
+│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+│   to run scripts.                                                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+Done in 37.7s using pnpm v10.26.1
+=== Aplicando schema de DB ===
+  Modo desarrollo — sincronizando schema (push sin --force)...
+
+> @workspace/db@0.0.0 push /home/runner/workspace/packages/db
+> drizzle-kit push --config ./drizzle.config.ts
+
+[90mReading config file '/home/runner/workspace/packages/db/drizzle.config.ts'[39m
+[90mUsing 'pg' driver for database querying[39m
+[⣷] Pulling schema from database...
+[2K[1A[2K[G[⣯] Pulling schema from database...
+[2K[1A[2K[G[⣟] Pulling schema from database...
+[2K[1A[2K[G[⡿] Pulling schema from database...
+[2K[1A[2K[G[⢿] Pulling schema from database...
+[2K[1A[2K[G[⣻] Pulling schema from database...
+[2K[1A[2K[G[⣽] Pulling schema from database...
+[2K[1A[2K[G[⣷] Pulling schema from database...
+[2K[1A[2K[G[⣯] Pulling schema from database...
+[2K[1A[2K[G[⣟] Pulling schema from database...
+[2K[1A[2K[G[⡿] Pulling schema from database...
+[2K[1A[2K[G[⢿] Pulling schema from database...
+[2K[1A[2K[G[⣻] Pulling schema from database...
+[2K[1A[2K[G[⣽] Pulling schema from database...
+[2K[1A[2K[G[⣷] Pulling schema from database...
+[2K[1A[2K[G[⣯] Pulling schema from database...
+[2K[1A[2K[G[[32m✓[39m] Pulling schema from database...
+[[32m✓[39m] Changes applied
+=== Building API server ===
+
+> @workspace/api-server@0.0.0 build /home/runner/workspace/apps/api
+> node ./build.mjs
+
+
+  [37mdist/[0m[1mindex.mjs[0m                       [33m4.2mb ⚠️[0m
+  [37mdist/[0m[1mpino-worker.mjs[0m               [36m153.4kb[0m
+  [37mdist/[0m[1mpino-file.mjs[0m                 [36m142.0kb[0m
+  [37mdist/[0m[1mpino-pretty.mjs[0m               [36m114.6kb[0m
+  [37mdist/[0m[1mthread-stream-worker.mjs[0m        [36m7.3kb[0m
+  [37mdist/[0m[1mindex.mjs.map[0m                   [36m7.4mb[0m
+  [37mdist/[0m[1mpino-worker.mjs.map[0m           [36m256.9kb[0m
+  [37mdist/[0m[1mpino-file.mjs.map[0m             [36m229.0kb[0m
+  [37mdist/[0m[1mpino-pretty.mjs.map[0m           [36m204.0kb[0m
+  [37mdist/[0m[1mthread-stream-worker.mjs.map[0m   [36m12.0kb[0m
+
+⚡ [32mDone in 1569ms[0m
+=== Starting API server (background, :8080) ===
+=== Starting Vite dev server (background, :21496) ===
+=== Waiting for API (:8080) and Vite (:21496) to be ready ===
+
+> @workspace/clientum@0.0.0 dev /home/runner/workspace/apps/web
+> vite --config vite.config.ts --host 0.0.0.0
+
+[22:11:33.641] [33mWARN[39m (974): [36mMP_WEBHOOK_SECRET is not set. MercadoPago webhook signature verification is DISABLED. Set this secret before going to production.[39m
+[22:11:33.709] [32mINFO[39m (974): [36mServer listening[39m
+    [35mport[39m: 8080
+[22:11:33.713] [32mINFO[39m (974): [36mTrial alert scheduler started[39m
+[22:11:33.713] [32mINFO[39m (974): [36mReminder scheduler started (interval: 60s)[39m
+[22:11:33.716] [32mINFO[39m (974): [36mAFIP token scheduler iniciado[39m
+    [35mintervalHoras[39m: 2
+    [35mumbralHoras[39m: 3
+[22:11:33.717] [32mINFO[39m (974): [36mHealth alert scheduler iniciado[39m
+    [35menabled[39m: false
+    [35mintervalMs[39m: 180000
+[22:11:33.717] [32mINFO[39m (974): [36mWeekly report scheduler started[39m
+    [35mintervalHoras[39m: 1
+[22:11:33.988] [32mINFO[39m (974): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 1,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 27
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J
+  [32m[1mVITE[22m v7.3.3[39m  [2mready in [0m[1m2287[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m21496[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.24.0.2:[1m21496[22m/[39m
+[22:11:35.039] [32mINFO[39m (974): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 2,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 5
+[22:11:36.077] [32mINFO[39m (974): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 3,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 4
+  Both services ready.
+=== Starting proxy (:5000) ===
+Proxy running on :5000 → API :8080  Vite :21496
+[22:11:38.831] [32mINFO[39m (974): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 4,
+      "method": "GET",
+      "url": "/api/widget/clientumadminwidgettoken00000001/widget.js"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 25
+[22:11:46.725] [32mINFO[39m (974): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 5,
+      "method": "GET",
+      "url": "/api/auth/user"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 3

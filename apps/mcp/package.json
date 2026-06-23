@@ -1,0 +1,15 @@
+{
+  "name": "@workspace/mcp-server",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/server.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@workspace/db": "workspace:*",
+    "drizzle-orm": "catalog:",
+    "zod": "catalog:"
+  }
+}

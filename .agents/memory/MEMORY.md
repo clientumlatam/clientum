@@ -1,0 +1,7 @@
+- [OpenRouter Free Models](openrouter-models.md) — confirmed working model IDs (June 2025); old IDs 404/rate-limited, always use fallback chain
+- [Console App Routes](console-app-routes.md) — new /app/* routes use AppShell sidebar layout; navy dark theme with @theme CSS tokens
+- [Wouter Link nesting](wouter-link-nesting.md) — Link renders as <a>; never wrap <a> inside Link, use className prop directly on Link instead
+- [Express 5 req.params TypeScript](express5-params.md) — req.params properties are string|string[] in Express 5; always use String(req.params["name"]), never destructure
+- [paymentEventsTable schema](payment-events-schema.md) — columns: id, userId, mpPaymentId, plan, amount, status, description, createdAt — no eventType/currency/metadata fields
+- [migrate.ts pool reuse](migrate-pool-reuse.md) — use pool from @workspace/db instead of creating a new pg.Pool to avoid @types/pg import errors in api-server
+- [AFIP + MCP implementation](afip-mcp-implementation.md) — AFIP WSAA/WSFE with node-forge PKCS#7; MCP StreamableHTTP at /mcp; axios+zod needed in api-server

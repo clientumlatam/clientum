@@ -1,0 +1,21 @@
+[Unit]
+Description=Clientum Frontend (Vite :21496)
+After=network.target
+
+[Service]
+Type=simple
+User=TU_USUARIO
+WorkingDirectory=/home/TU_USUARIO/clientum
+
+EnvironmentFile=/home/TU_USUARIO/clientum/.env
+
+ExecStart=/usr/bin/pnpm --filter @workspace/clientum run dev
+
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=clientum-vite
+
+[Install]
+WantedBy=multi-user.target

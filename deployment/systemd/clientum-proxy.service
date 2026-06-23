@@ -1,0 +1,22 @@
+[Unit]
+Description=Clientum Proxy (:5000 → API + Vite)
+After=network.target clientum-api.service clientum-vite.service
+Wants=clientum-api.service clientum-vite.service
+
+[Service]
+Type=simple
+User=TU_USUARIO
+WorkingDirectory=/home/TU_USUARIO/clientum
+
+EnvironmentFile=/home/TU_USUARIO/clientum/.env
+
+ExecStart=/usr/bin/node proxy.mjs
+
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=clientum-proxy
+
+[Install]
+WantedBy=multi-user.target

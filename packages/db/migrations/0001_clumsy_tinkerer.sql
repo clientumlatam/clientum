@@ -1,0 +1,2 @@
+ALTER TABLE "payment_events" DROP CONSTRAINT "payment_events_mp_payment_id_unique";--> statement-breakpoint
+CREATE UNIQUE INDEX "idx_payment_events_mp_status" ON "payment_events" USING btree ("mp_payment_id","status");

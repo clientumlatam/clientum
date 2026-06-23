@@ -1,0 +1,25 @@
+[Unit]
+Description=Clientum API Server (Express — puerto definido por PORT en .env)
+After=network.target postgresql.service
+Requires=postgresql.service
+
+[Service]
+Type=simple
+User=TU_USUARIO
+WorkingDirectory=/home/TU_USUARIO/clientum
+
+# Cargar variables de entorno desde .env
+EnvironmentFile=/home/TU_USUARIO/clientum/.env
+
+# Construir y arrancar el API server
+ExecStartPre=/usr/bin/pnpm --filter @workspace/api-server run build
+ExecStart=/usr/bin/node --enable-source-maps apps/api/dist/index.mjs
+
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=clientum-api
+
+[Install]
+WantedBy=multi-user.target

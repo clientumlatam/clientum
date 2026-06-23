@@ -1,0 +1,19 @@
+[Unit]
+Description=Evolution API Lite — WhatsApp Gateway (puerto definido por SERVER_PORT en .env)
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=TU_USUARIO
+WorkingDirectory=/home/TU_USUARIO/evolution-lite
+EnvironmentFile=/home/TU_USUARIO/evolution-lite/.env
+ExecStart=/usr/bin/node dist/main.js
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=evolution-lite
+
+[Install]
+WantedBy=multi-user.target

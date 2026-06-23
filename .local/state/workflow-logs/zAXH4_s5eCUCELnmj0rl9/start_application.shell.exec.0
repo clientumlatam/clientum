@@ -1,0 +1,48 @@
+=== Verificando lockfile ===
+=== Installing dependencies ===
+Scope: all 10 workspace projects
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +977
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 977, reused 111, downloaded 0, added 0
+Progress: resolved 977, reused 336, downloaded 0, added 0
+Progress: resolved 977, reused 475, downloaded 0, added 0
+Progress: resolved 977, reused 602, downloaded 0, added 0
+Progress: resolved 977, reused 631, downloaded 0, added 0
+Progress: resolved 977, reused 977, downloaded 0, added 6
+Progress: resolved 977, reused 977, downloaded 0, added 31
+Progress: resolved 977, reused 977, downloaded 0, added 95
+Progress: resolved 977, reused 977, downloaded 0, added 124
+Progress: resolved 977, reused 977, downloaded 0, added 152
+Progress: resolved 977, reused 977, downloaded 0, added 215
+Progress: resolved 977, reused 977, downloaded 0, added 286
+Progress: resolved 977, reused 977, downloaded 0, added 321
+Progress: resolved 977, reused 977, downloaded 0, added 340
+Progress: resolved 977, reused 977, downloaded 0, added 382
+Progress: resolved 977, reused 977, downloaded 0, added 413
+Progress: resolved 977, reused 977, downloaded 0, added 432
+Progress: resolved 977, reused 977, downloaded 0, added 433
+Progress: resolved 977, reused 977, downloaded 0, added 446
+Progress: resolved 977, reused 977, downloaded 0, added 450
+Progress: resolved 977, reused 977, downloaded 0, added 451
+Progress: resolved 977, reused 977, downloaded 0, added 478
+Progress: resolved 977, reused 977, downloaded 0, added 485
+Progress: resolved 977, reused 977, downloaded 0, added 499
+Progress: resolved 977, reused 977, downloaded 0, added 549
+Progress: resolved 977, reused 977, downloaded 0, added 586
+Progress: resolved 977, reused 977, downloaded 0, added 595
+Progress: resolved 977, reused 977, downloaded 0, added 601
+Progress: resolved 977, reused 977, downloaded 0, added 602
+Progress: resolved 977, reused 977, downloaded 0, added 603
+Progress: resolved 977, reused 977, downloaded 0, added 604
+Progress: resolved 977, reused 977, downloaded 0, added 605
+Progress: resolved 977, reused 977, downloaded 0, added 614
+Progress: resolved 977, reused 977, downloaded 0, added 628
+Progress: resolved 977, reused 977, downloaded 0, added 714
+Progress: resolved 977, reused 977, downloaded 0, added 790
+Progress: resolved 977, reused 977, downloaded 0, added 827
+Progress: resolved 977, reused 977, downloaded 0, added 871
+Progress: resolved 977, reused 977, downloaded 0, added 905
+Progress: resolved 977, reused 977, downloaded 0, added 927
+ ERR_PNPM_ENOTEMPTY  ENOTEMPTY: directory not empty, rename '/home/runner/workspace/node_modules/.pnpm/@mermaid-js+parser@1.1.1/node_modules/@mermaid-js/parser_tmp_706' -> '/home/runner/workspace/node_modules/.pnpm/@mermaid-js+parser@1.1.1/node_modules/@mermaid-js/parser'
